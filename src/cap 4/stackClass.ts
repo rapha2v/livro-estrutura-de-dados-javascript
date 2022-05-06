@@ -40,6 +40,9 @@ class Stack {
     this.items = [];
   }
 
+  /**
+   * Devolve o tamanho da pilha
+   **/
   size(): number {
     return this.items.length;
   }
