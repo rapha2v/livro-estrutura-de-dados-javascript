@@ -1,4 +1,4 @@
-class Stack {
+export class Stack {
   public items: any[];
 
   constructor() {
@@ -46,18 +46,24 @@ class Stack {
   size(): number {
     return this.items.length;
   }
+
+  itemsStack(): any[] {
+    let item = this.items;
+    return item.reverse();
+  }
 }
 
-const stack = new Stack();
-console.log(stack.isEmpty());
-stack.push(5);
-stack.push(8);
-console.log(stack.peek());
-stack.push(11);
-console.log(stack.size());
-console.log(stack.isEmpty());
-stack.push(15);
-stack.pop();
-stack.pop();
-console.log(stack.size());
-console.log(stack.items);
+//
+// const stack = new Stack();
+// console.log(stack.isEmpty());
+// stack.push(5);
+// stack.push(8);
+// console.log(stack.peek());
+// stack.push(11);
+// console.log(stack.size());
+// console.log(stack.isEmpty());
+// stack.push(15);
+// stack.pop();
+// stack.pop();
+// console.log(stack.size());
+// console.log(stack.itemsStack());
